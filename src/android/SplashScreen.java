@@ -275,13 +275,7 @@ public class SplashScreen extends CordovaPlugin {
      */
     private void loadSpinner() {
         // If loadingDialog property, then show the App loading dialog for first page of app
-        String loading = null;
-        if (webView.canGoBack()) {
-            loading = preferences.getString("LoadingDialog", null);
-        }
-        else {
-            loading = preferences.getString("LoadingPageDialog", null);
-        }
+        String loading = preferences.getString("LoadingPageDialog", null);
         if (loading != null) {
             String title = "";
             String message = "Loading Application...";
