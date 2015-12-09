@@ -34,8 +34,7 @@
 
 - (BOOL)enabledAutorotation
 {
-    NSNumber *number =  (NSNumber *)objc_getAssociatedObject(self, @selector(enabledAutorotation));
-    return [number boolValue];
+    return YES;
 }
 
 + (void)load
